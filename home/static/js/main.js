@@ -1,5 +1,5 @@
 window.addEventListener("load", ()=>{
-    // menu button functionality 
+    // menu and search button functionality 
     const menuBtn = document.querySelector(".menu-btn")
     const menuList = document.querySelector(".nav-list")
     
@@ -13,9 +13,14 @@ window.addEventListener("load", ()=>{
             menuBtn.innerHTML = `<i class="fas fa-bars"></i>`
         }
     }
-
+    function removeNav() {
+        menuList.classList.remove("active")
+    }
+    // disappear on scroll
     window.addEventListener("scroll", ()=>{
         menuList.classList.remove("active", screenY > 0)
         menuBtn.innerHTML = `<i class="fas fa-bars"></i>`
     })
+
+
 })

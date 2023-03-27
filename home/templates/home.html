@@ -1,4 +1,243 @@
-{% extends "base.html" %}
+{% extends 'base.html' %}
+{% load static %}
 {% block content %}
-<h1>Welcome</h1>
+
+<!-- contact us message alert -->
+<!-- <div class="alert alert-warning alert-dismissible fade show" role="alert">
+    <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div> -->
+<!-- end of contact us message alert -->
+<!-- header -->
+<header>
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active box-par">
+            <img src="{% static 'img/car9.jpg' %}" class="d-block w-100" alt="Nurse taking care of patient">
+            <div class="content-box">
+                <h2>Welcome to Mechanic.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam minus consectetur enim esse ipsam dolor.</p>
+            </div>
+          </div>
+          <div class="carousel-item box-par box1">
+            <img src="{% static 'img/car2.jpg' %}" class="d-block w-100" alt="A nurse doing research in a lab">
+            <div class="content-box">
+                <h2>hire us to work for you.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam minus consectetur enim esse ipsam dolor.</p>
+            </div>
+          </div>
+          <div class="carousel-item box-par box2">
+            <img src="{% static 'img/car3.jpg' %}" class="d-block w-100" alt="Nurse taking care of patient">
+            <div class="content-box">
+                <h2>We have professional mechanics to do quality work for you.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam minus consectetur enim esse ipsam dolor.</p>
+            </div>
+          </div>
+          <div class="carousel-item box-par box2">
+            <img src="{% static 'img/car4.png' %}" class="d-block w-100" alt="Nurse taking care of patient">
+            <div class="content-box">
+                <h2>We have professional mechanics to do quality work for you.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam minus consectetur enim esse ipsam dolor.</p>
+            </div>
+          </div>
+          <div class="carousel-item box-par box2">
+            <img src="{% static 'img/car5.webp' %}" class="d-block w-100" alt="Nurse taking care of patient">
+            <div class="content-box">
+                <h2>We have professional mechanics to do quality work for you.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam minus consectetur enim esse ipsam dolor.</p>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev" aria-label="Previous carousel image">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next" aria-label="next carousel image">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+</header>
+<!-- end of header -->
+<!-- health divider -->
+<div class="health-div">
+    <div class="health-wrapper">
+        <div class="health health-1">
+            <h2>professional mechanics</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia nam, doloremque quod ipsam inventore ullam sapiente totam similique cupiditate tempore?</p>
+            <a href="#n">read more</a>
+        </div>
+        <div class="health health-2">
+            <h2>expert drivers</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia nam, doloremque quod ipsam inventore ullam sapiente totam similique cupiditate tempore?</p>
+            <a href="#n">read more</a>
+        </div>
+    </div>
+</div>
+<!-- end of health divider -->
+<!-- service info -->
+<section class="service-info">
+    <div class="section-wrapper">
+        <div class="serv-info-wrapper">
+            <h1>Your car is safe with us</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis modi doloribus eaque ratione? Sint corrupti, nisi dolores libero ullam, nulla aliquam, magni illo rem sit labore quos veritatis? Quae, mollitia.</p>
+        </div>
+    </div>
+</section>
+<!-- end of service info -->
+<!-- stats section -->
+<section class="stats">
+    <div class="section-wrapper">
+        <div class="stats-grid">
+            <!-- start -->
+            <div class="box">
+                <h2>700+ +</h2>
+                <p>satisfied customers</p>
+            </div>
+            <!-- end -->
+            <!-- start -->
+            <div class="box">
+                <h2>70+</h2>
+                <p>professional engineers</p>
+            </div>
+            <!-- end -->
+            <!-- start -->
+            <div class="box">
+                <h2>5+</h2>
+                <p>years of experience</p>
+            </div>
+            <!-- end -->
+        </div>
+    </div>
+</section>
+<!-- end of stats section -->
+<!-- service 1 -->
+<section class="service-1">
+    <div class="section-wrapper">
+        <h1>We bring you the best car and truck services</h1>
+        <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, facilis?</h4>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur, ea. Iste distinctio ut temporibus quos enim perspiciatis? Asperiores repellendus delectus aut consequuntur ipsum, dignissimos adipisci, similique quis deleniti quidem voluptatibus!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam eos voluptatibus consequatur quae, quibusdam officiis, quaerat ab officia quo nam consectetur unde doloribus sint corrupti quos excepturi delectus omnis corporis.</p>
+    </div>
+</section>
+<!-- end of service 1 -->
+<!-- service 2 -->
+<section class="service-2" id="about">
+    <div class="section-wrapper">
+        <div class="service-wrapper">
+            <div class="content-box">
+                <h1>what we do</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis a, sapiente possimus quod ipsa inventore laborum amet. A iure, quod dicta ipsa assumenda quam, accusamus officia dolores repudiandae odio qui.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem architecto, quod quae sunt molestias iure veritatis eius! Consectetur expedita eius ullam culpa deserunt molestias quaerat quia aperiam. Voluptatibus, fugiat eaque.</p>
+                <a href="#contact" class="all-btns">contact us</a>
+            </div>
+            <div class="img-box">
+                <img src="{% static 'img/car13.jpg' %}" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end of service 2 -->
+<!-- professionals section -->
+<section class="prof">
+    <div class="section-wrapper">
+        <h1>professional mechanics</h1>
+        <div class="prof-grid">
+            <!-- start -->
+            <div class="box" tabindex="0" data-aos="fade-up" data-aos-delay="100">
+                <div class="overlay">
+                    <h2>articulator trucks</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, dolores, sequi obcaecati labore error assumenda.</p>
+                    <a href="{% url 'about' %}" class="all-btns">learn more</a>
+                </div>
+                <div class="content-box">
+                    <h2>articulator trucks</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, dolores, sequi obcaecati labore error assumenda.</p>
+                    <a hrefhref="{% url 'about' %}">learn more</a>
+                </div>
+            </div>
+            <!-- end -->
+            <!-- start -->
+            <div class="box" tabindex="0" data-aos="fade-up" data-aos-delay="200">
+                <div class="overlay">
+                    <h2>farm tractors</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, dolores, sequi obcaecati labore error assumenda.</p>
+                    <a href="{% url 'about' %}" class="all-btns">learn more</a>
+                </div>
+                <div class="content-box">
+                    <h2>farm tractors</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, dolores, sequi obcaecati labore error assumenda.</p>
+                    <a href="{% url 'about' %}">learn more</a>
+                </div>
+            </div>
+            <!-- end -->
+            <!-- start -->
+            <div class="box" tabindex="0" data-aos="fade-up" data-aos-delay="300">
+                <div class="overlay">
+                    <h2>light duty cars</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, dolores, sequi obcaecati labore error assumenda.</p>
+                    <a href="{% url 'about' %}" class="all-btns">learn more</a>
+                </div>
+                <div class="content-box">
+                    <h2>light duty cars</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, dolores, sequi obcaecati labore error assumenda.</p>
+                    <a href="{% url 'about' %}">learn more</a>
+                </div>
+            </div>
+            <!-- end -->
+            <!-- start -->
+            <div class="box" tabindex="0" data-aos="fade-up" data-aos-delay="400">
+                <div class="overlay">
+                    <h2>jeeps & more</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, dolores, sequi obcaecati labore error assumenda.</p>
+                    <a href="{% url 'about' %}" class="all-btns">learn more</a>
+                </div>
+                <div class="content-box">
+                    <h2>jeeps & more</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, dolores, sequi obcaecati labore error assumenda.</p>
+                    <a href="{% url 'about' %}">learn more</a>
+                </div>
+            </div>
+            <!-- end -->
+        </div>
+    </div>
+</section>
+<!-- end of professionals section -->
+<!-- search jobs section -->
+<section class="search-job">
+    <div class="section-wrapper">
+        <h1>converting UK cars from right to left</h1>
+        <form action="#" class="search-job-form">
+            <input type="search" placeholder="let us change your car interior design" aria-label="input the job name you are searching for" readonly>
+            <input type="submit" value="mechanic" class="all-btns">
+        </form>
+        <div class="content-wrapper">
+            <div class="box-1">
+                <h4>love us to work on your car or truck?</h4>
+                <a href="#contact" class="all-btns">contact us</a>
+            </div>
+            <div class="box-2">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi optio est dolorum, itaque quas mollitia voluptates asperiores. Esse laudantium at, error ab voluptatum placeat asperiores molestias impedit accusamus provident dignissimos.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end of search jobs section -->
+<!-- contact us section -->
+<section class="contact" id="contact">
+    <div class="section-wrapper">
+        <div class="contact-wrapper">
+            <h1>send us a message</h1>
+            <form action="#">
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+                <textarea placeholder="Message"></textarea>
+                <input type="submit" value="send" class="all-btns">
+            </form>
+        </div>
+    </div>
+</section>
+<!-- end of contact us section -->
 {% endblock %}
