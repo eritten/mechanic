@@ -742,6 +742,9 @@ header {
     text-align: center;
     color: var(--main-deep);
 }
+.about p {
+    margin-bottom: 1.5rem;
+}
 .learn-more .section-wrapper {
     padding-top: 6rem;
 }
