@@ -28,6 +28,10 @@
                 <p>. We are dedicated to providing top-notch service in Ghana, including our specialty of changing car steering from right to left for Ghanaian use. Our team of experienced mechanics is committed to ensuring your vehicle is in tip-top shape. Let us help you get back on the road with confidence.</p>
             </div>
           </div>
+{% for post in posts %}
+<h1>{{post.name}}
+<ing src="{{post.image.url}}" /></h1>
+{% endfor %}
           <div class="carousel-item box-par box2">
             <img src="{% static 'img/car3.jpg' %}" class="d-block w-100" alt="Nurse taking care of patient">
             <div class="content-box">

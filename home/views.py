@@ -1,9 +1,11 @@
 from django.shortcuts import render
+from .models import Car
 
 # Create your views here.
 
 def home(request):
-    return render(request, "home.html")
+    project = Car.objects.all()
+    return render(request, "home.html", {"posts": project})
 
 def about(request):
     return render(request, "about.html")
