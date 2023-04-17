@@ -1,0 +1,256 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<!-- contact us message alert -->
+<!-- <div class="alert alert-warning alert-dismissible fade show" role="alert">
+    <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div> -->
+<!-- end of contact us message alert -->
+<!-- header -->
+<header>
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active box-par">
+            <img src="{% static 'img/car9.jpg' %}" class="d-block w-100" alt="Nurse taking care of patient">
+            <div class="content-box">
+                <h2>Welcome to our auto mechanic website!</h2>
+                <p>We are proud to offer our services in Ghana where we specialize in changing car steering from right to left for Ghanaian use. Our team of expert mechanics is here to provide you with the best service possible. We look forward to helping you get your car on the road safely and efficiently.</p>
+            </div>
+          </div>
+          <div class="carousel-item box-par box1">
+            <img src="{% static 'img/car2.jpg' %}" class="d-block w-100" alt="A nurse doing research in a lab">
+            <div class="content-box">
+                <h2>Thank you for visiting our auto mechanic website. </h2>
+                <p>. We are dedicated to providing top-notch service in Ghana, including our specialty of changing car steering from right to left for Ghanaian use. Our team of experienced mechanics is committed to ensuring your vehicle is in tip-top shape. Let us help you get back on the road with confidence.</p>
+            </div>
+          </div>
+{% for post in posts %}
+<h1>{{post.name}}
+<ing src="{{post.image.url}}" /></h1>
+{% endfor %}
+          <div class="carousel-item box-par box2">
+            <img src="{% static 'img/car3.jpg' %}" class="d-block w-100" alt="Nurse taking care of patient">
+            <div class="content-box">
+                <h2>We are delighted to welcome you to our auto mechanic website. </h2>
+                <p>Our services in Ghana include the conversion of car steering from right to left for Ghanaian use. Our skilled mechanics are equipped to handle any auto repair needs you may have. Trust us to get your car running smoothly and safely.</p>
+            </div>
+          </div>
+          <div class="carousel-item box-par box2">
+            <img src="{% static 'img/car4.png' %}" class="d-block w-100" alt="Nurse taking care of patient">
+            <div class="content-box">
+                <h2>Welcome to our auto mechanic website, where we are proud to offer our services in Ghana.</h2>
+                <p>We specialize in converting car steering from right to left for Ghanaian use. Our team of highly-trained mechanics is dedicated to providing the best possible service to keep your vehicle running smoothly. Let us be your go-to for all your auto repair needs.</p>
+            </div>
+          </div>
+          <div class="carousel-item box-par box2">
+            <img src="{% static 'img/car5.webp' %}" class="d-block w-100" alt="Nurse taking care of patient">
+            <div class="content-box">
+                <h2>Thank you for choosing our auto mechanic website.</h2>
+                <p>We are pleased to provide our services in Ghana, including our specialty of changing car steering from right to left for Ghanaian use. Our team of experienced mechanics is committed to providing quality service to keep your car in top condition. Let us help you keep your vehicle running smoothly and safely</p>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev" aria-label="Previous carousel image">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next" aria-label="next carousel image">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+</header>
+<!-- end of header -->
+<!-- health divider -->
+<div class="health-div">
+    <div class="health-wrapper">
+        <div class="health health-1">
+            <h2>professional mechanics</h2>
+            <p>At our auto mechanic website, we pride ourselves on providing top-notch services for our clients. Our team of professional mechanics and drivers are some of the best in the business, with years of experience and a dedication to excellence that sets us apart from the competition. Whether you're looking to convert your car's steering from right-hand drive to left-hand drive for local use, or you need routine maintenance and repairs, we have the expertise and know-how to get the job done right.</p>
+            <a href="#n">read more</a>
+        </div>
+        <div class="health health-2">
+            <h2>expert drivers</h2>
+            <p>Our mechanics are trained to work with a wide variety of vehicles and have access to the latest tools and equipment to ensure that your car is running at peak performance. Our drivers are equally skilled, with a deep understanding of the local roads and traffic patterns to ensure that your car is safe and reliable. We take pride in our work and strive to exceed your expectations with every job we undertake. So if you're in need of professional auto services, look no further than our team at our auto mechanic website.</p>
+            <a href="#n">read more</a>
+        </div>
+    </div>
+</div>
+<!-- end of health divider -->
+<!-- service info -->
+<section class="service-info">
+    <div class="section-wrapper">
+        <div class="serv-info-wrapper">
+            <h1>Your car is safe with us</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis modi doloribus eaque ratione? Sint corrupti, nisi dolores libero ullam, nulla aliquam, magni illo rem sit labore quos veritatis? Quae, mollitia.</p>
+        </div>
+    </div>
+</section>
+<!-- end of service info -->
+<!-- stats section -->
+<section class="stats">
+    <div class="section-wrapper">
+        <div class="stats-grid">
+            <!-- start -->
+            <div class="box">
+                <h2>700+</h2>
+                <p>satisfied customers</p>
+            </div>
+            <!-- end -->
+            <!-- start -->
+            <div class="box">
+                <h2>50+</h2>
+                <p>professional engineers</p>
+            </div>
+            <!-- end -->
+            <!-- start -->
+            <div class="box">
+                <h2>10+</h2>
+                <p>years of experience</p>
+            </div>
+            <!-- end -->
+        </div>
+    </div>
+</section>
+<!-- end of stats section -->
+<!-- service 1 -->
+<section class="service-1">
+    <div class="section-wrapper">
+        <h1>We bring you the best car and truck services</h1>
+        <h4>Dear valued customers,
+            We understand that safety is a top priority for car owners when it comes to driving. That's why we want to share with you some information about the safety of cars that have been converted from right-hand drive to left-hand drive by our company in Ghana.
+            </h4>
+        <p>At Lefthand Drive Ghana, we take great pride in providing high-quality services for converting cars from right-hand drive to left-hand drive. We understand that the conversion process involves more than just switching the location of the steering wheel. That's why we carefully inspect and adjust all safety features in the car, including the brakes, suspension, and steering, to ensure optimal performance in the new left-hand drive configuration.</p>
+        <p>Our experienced mechanics use only the highest quality parts and equipment during the conversion process to ensure that your car is safe and reliable to drive. We also conduct thorough safety tests before returning the car to you to ensure that it meets all safety standards and requirements.</p>
+        
+    </div>
+</section>
+<!-- end of service 1 -->
+<!-- service 2 -->
+<section class="service-2" id="about">
+    <div class="section-wrapper">
+        <div class="service-wrapper">
+            <div class="content-box">
+                <h1>what we do</h1>
+                <p>We are proud to say that our customers have reported a significant improvement in their driving experience, particularly when it comes to safety, after having their cars converted by our team. Our commitment to safety and quality has earned us a reputation as a trusted and reliable service provider for car conversions in Ghana. <br>
+                    If you're looking to have your car converted from right-hand drive to left-hand drive, look no further than Lefthand Drive Ghana
+                    . </p>
+                    <p>Our team of expert mechanics is here to provide you with the highest quality service and ensure that your car is safe and reliable to drive.
+                        Thank you for choosing Lefthand Drive Ghana
+                         for your car conversion needs.
+                        Best regards!
+                        </p>
+                <a href="#contact" class="all-btns">contact us</a>
+            </div>
+            <div class="img-box">
+                <img src="{% static 'img/car13.jpg' %}" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end of service 2 -->
+<!-- professionals section -->
+<section class="prof">
+    <div class="section-wrapper">
+        <h1>professional mechanics</h1>
+        <div class="prof-grid">
+            <!-- start -->
+            <div class="box" tabindex="0" data-aos="fade-up" data-aos-delay="100">
+                <div class="overlay">
+                    <h2>articulator trucks</h2>
+                    <p>We can work on your large trucks to change the side of the steer to the left and many other services.</p>
+                    <a href="{% url 'about' %}" class="all-btns">learn more</a>
+                </div>
+                <div class="content-box">
+                    <h2>articulator trucks</h2>
+                    <p>We can work on your large trucks to change the side of the steer to the left and many other services.</p>
+                    <a hrefhref="{% url 'about' %}">learn more</a>
+                </div>
+            </div>
+            <!-- end -->
+            <!-- start -->
+            <div class="box" tabindex="0" data-aos="fade-up" data-aos-delay="200">
+                <div class="overlay">
+                    <h2>farm tractors</h2>
+                    <p>We can work on your farm tractors to change the side of the steer to the left and many other services.</p>
+                    <a href="{% url 'about' %}" class="all-btns">learn more</a>
+                </div>
+                <div class="content-box">
+                    <h2>farm tractors</h2>
+                    <p>We can work on your farm tractors to change the side of the steer to the left and many other services.</p>
+                    <a href="{% url 'about' %}">learn more</a>
+                </div>
+            </div>
+            <!-- end -->
+            <!-- start -->
+            <div class="box" tabindex="0" data-aos="fade-up" data-aos-delay="300">
+                <div class="overlay">
+                    <h2>light duty cars</h2>
+                    <p>We can work on your light duty or private cars to change the side of the steer to the left and many other services.</p>
+                    <a href="{% url 'about' %}" class="all-btns">learn more</a>
+                </div>
+                <div class="content-box">
+                    <h2>light duty cars</h2>
+                    <p>We can work on your light duty or private cars to change the side of the steer to the left and many other services.</p>
+                    <a href="{% url 'about' %}">learn more</a>
+                </div>
+            </div>
+            <!-- end -->
+            <!-- start -->
+            <div class="box" tabindex="0" data-aos="fade-up" data-aos-delay="400">
+                <div class="overlay">
+                    <h2>jeeps & more</h2>
+                    <p>We can work on your jeeps and other big cars to change the side of the steer to the left and many other services.</p>
+                    <a href="{% url 'about' %}" class="all-btns">learn more</a>
+                </div>
+                <div class="content-box">
+                    <h2>jeeps & more</h2>
+                    <p>We can work on your jeeps and other big cars to change the side of the steer to the left and many other services.</p>
+                    <a href="{% url 'about' %}">learn more</a>
+                </div>
+            </div>
+            <!-- end -->
+        </div>
+    </div>
+</section>
+<!-- end of professionals section -->
+<!-- search jobs section -->
+<section class="search-job">
+    <div class="section-wrapper">
+        <h1>converting UK cars from right to left</h1>
+        <form action="#" class="search-job-form">
+            <input type="search" placeholder="let us change your car interior design" aria-label="input the job name you are searching for" readonly>
+            <input type="submit" value="mechanic" class="all-btns">
+        </form>
+        <div class="content-wrapper">
+            <div class="box-1">
+                <h4>love us to work on your car or truck?</h4>
+                <a href="#contact" class="all-btns">contact us</a>
+            </div>
+            <div class="box-2">
+                <p>At our company, we value our customers and strive to provide them with the best possible experience. We are always willing to go the extra mile to ensure that our customers are satisfied with the services we provide. Whether you need a simple repair or a complex conversion, you can trust us to get the job done right. Thank you for considering our company for all your auto mechanic needs in Ghana.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end of search jobs section -->
+<!-- contact us section -->
+<section class="contact" id="contact">
+    <div class="section-wrapper">
+        <div class="contact-wrapper">
+            <h1>send us a message</h1>
+            <form action="#">
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+                <textarea placeholder="Message"></textarea>
+                <input type="submit" value="send" class="all-btns">
+            </form>
+        </div>
+    </div>
+</section>
+<!-- end of contact us section -->
+{% endblock %}

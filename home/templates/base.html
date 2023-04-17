@@ -1,0 +1,94 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="At our auto mechanic website, we pride ourselves on providing top-notch services for our clients. Our team of professional mechanics and drivers are some of the best in the business, with years of experience and a dedication to excellence that sets us apart from the competition. Whether you're looking to convert your car's steering from right-hand drive to left-hand drive for local use, or you need routine maintenance and repairs, we have the expertise and know-how to get the job done right.
+    Our mechanics are trained to work with a wide variety of vehicles and have access to the latest tools and equipment to ensure that your car is running at peak performance. Our drivers are equally skilled, with a deep understanding of the local roads and traffic patterns to ensure that your car is safe and reliable. We take pride in our work and strive to exceed your expectations with every job we undertake. So if you're in need of professional auto services, look no further than our team at our auto mechanic website.
+    ">
+    <title> Home</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/aos.css' %}">
+    <script src="{% static 'js/all.js' %}"></script>
+</head>
+<body> 
+ <nav>
+    <div class="nav-wrapper">
+        <a href="{% url 'home' %}" class="logo-box">
+            <h4>Lefthand Drive</h4>
+        </a>
+        <ul class="nav-list">
+            <li>
+                <a href="{% url 'home' %}">home</a>
+            </li>
+            {% if request.path == '/' %}
+            <li>
+                <a href="{% url 'about' %}">about us</a>
+            </li>
+
+            <li>
+                <a href="#contact">contact us</a>
+            </li>
+            {% else %}
+            {# #}
+            {% endif %}
+        </ul>
+        <div class="nav-btn-wrapper">
+            <button class="menu-btn" aria-label="menu button">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </div>
+ </nav>
+{% block content %}
+
+{% endblock %}
+<!-- footer -->
+<footer>
+    <div class="footer-wrapper">
+        <div class="mail-box">
+            <p>Email: siaissaka@gmail.com</p>
+            <p>Mobile: 0244 419 191</p>
+        </div>
+        <div class="address-box">
+            <p>Address:</p>
+            <address>Lefthand Drive Ghana Ltd
+                <p>We take pride in our work and strive to exceed your expectations with every job we undertake. So if you're in need of professional auto services, look no further than our team at our auto mechanic website.</p>
+            </address>
+        </div>
+        <div class="social-box">
+            <a href="#n" aria-label="facebook" data-aos="fade-up" data-aos-delay="100">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#n" aria-label="twitter" data-aos="fade-up" data-aos-delay="200">
+                <i class="fab fa-twitter"></i>
+            </a>
+        </div>
+    </div>
+</footer>
+<div class="outro">
+    <p>copyright &copy; 2023 Lefthand Drive Ghana Ltd | powered by sewonet</p>
+</div>
+<!-- end of footer -->
+<script src="{% static 'js/aos.js' %}"></script>
+<script src="{% static 'js/jquery-3.6.0.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+<script src="{% static 'js/main.js' %}"></script>
+
+<!-- aos init -->
+<script>
+     AOS.init({
+        offset: 50,
+        delay: 100,
+        duration: 800,
+        easing: 'ease',
+        once: false,
+        mirror: false,
+        anchorPlacement: 'top-bottom'
+    })
+</script>
+</body>
+</html>
